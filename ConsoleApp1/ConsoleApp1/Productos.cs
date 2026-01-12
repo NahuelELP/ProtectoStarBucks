@@ -9,41 +9,19 @@ namespace ConsoleApp1
 {
     internal class Productos
     {
-        private string nombre;
-        private int precio;
-        private DateTime date;
-        public string Nombre
+        public string Nombre { get; set; }
+        public double Precio { get; set; }
+        public DateTime Date { get; set; }
+
+        public Productos (string nombre, double precio, DateTime date)
         {
-            get
-            {
-                return nombre;
-            }
-            set
-            {
-                nombre = value;
-            }
+            Nombre = nombre;
+            Precio = precio;
+            Date = date;
         }
-        public int Precio
+        public void InfoProductos()
         {
-            get
-            {
-                return precio;
-            }
-            set
-            {
-                precio = value;
-            }
-        }
-        public DateTime Date
-        {
-            get
-            {
-                return date;
-            }
-            set
-            {
-                date = value;
-            }
+            Console.WriteLine("Producto: {0}\nPrecio: {1}\nVencimento: {2}",Nombre, Precio, Date);
         }
     }
 }

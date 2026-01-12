@@ -8,30 +8,7 @@ namespace ConsoleApp1
 {
     internal class SesionNormal
     {
-        private string nombre;
-        private string contraseña;
-
-        public string Nombre
-        {
-            get
-            {
-                return nombre;
-            }
-            set
-            {
-                nombre = value;
-            }
-        }
-        public string Contraseña
-        {
-            get
-            {
-                return contraseña;
-            }
-            set
-            {
-                contraseña = value;
-            }
-        }
+        public string Nombre { get; set; }
+        public string Contraseña { get; set; }
     }
 }

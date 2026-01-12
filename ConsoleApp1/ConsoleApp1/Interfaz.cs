@@ -9,30 +9,8 @@ namespace ConsoleApp1
 {
     internal class Interfaz
     {
-        private string inputSesion;
-        private string inputInterfazAdmin;
-        public string InputInterfazAdmin
-        {
-            get
-            {
-                return inputInterfazAdmin;
-            }
-            set
-            {
-                inputInterfazAdmin = value; //validar
-            }
-        }
-        public string InputSesion
-        {
-            get
-            {
-                return inputSesion;
-            }
-            set
-            {
-                inputSesion = value;//validar
-            }
-        }
+        public string InputInterfazAdmin { get; set; }
+        public string InputSesion { get; set; }
         public void IniInterfaz()
         {
             Console.WriteLine("---------------------------");
